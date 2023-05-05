@@ -3,11 +3,9 @@ package webui
 
 import (
         "errors"
-        "fmt"
         "github.com/hunchly/funchly/onionscan/config"
         "github.com/hunchly/funchly/onionscan/crawldb"
         "github.com/hunchly/funchly/onionscan/utils"
-        "html/template"
         "log"
         "net/http"
         "strconv"
@@ -345,6 +343,8 @@ func (wui *WebUI) Index(w http.ResponseWriter, r *http.Request) {
         }
                 w.Header().Set("Content-Type", "application/json")
                 jsonData, err := json.Marshal(content)
+                if err != nil {
+                }
                 w.Write(jsonData)
 
 }
