@@ -9,7 +9,7 @@ import (
 	"github.com/hunchly/funchly/onionscan/onionscan/steps"
 	"github.com/hunchly/funchly/onionscan/report"
 	"github.com/hunchly/funchly/onionscan/utils"
-	"github.com/hunchly/funchly/onionscan/webui"
+	"github.com/tonyhat7032/go_project/onionscan/webui"
 	"golang.org/x/crypto/ssh/terminal"
 	"io/ioutil"
 	"log"
